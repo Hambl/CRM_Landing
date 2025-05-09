@@ -1,0 +1,48 @@
+.review {
+  width: 328px;
+  height: 290px;
+  font-size: 16px;
+  border: 1px solid #BDBDBD;
+  border-radius: 20px;
+  padding: 16px;
+  padding-top: 34px;
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  grid-template-rows: repeat(2, 24px) 1fr;
+  text-align: left;
+}
+
+.review__avatar {
+  grid-area: 1/1/2/3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review__name {
+  grid-area: 1/2/2/3;
+}
+
+.review__company {
+  grid-area: 2/2/3/3;
+  font-weight: 700;
+}
+
+.review > blockquote {
+  grid-area: 3/1/4/4;
+  margin: 0;
+}
+
+.review__quote {
+  padding-top: 30px;
+  line-height: normal;
+}
+
+.review__quote::after {
+  content: "“";
+}
+
+.review__quote::before {
+  content: "”";
+}

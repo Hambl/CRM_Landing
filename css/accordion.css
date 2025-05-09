@@ -1,0 +1,50 @@
+.accordion {
+  max-width: 850px;
+  width: 100%;
+}
+
+.details {
+  width: 100%;
+  min-height: 90px;
+  padding-block: 24px;
+  border-bottom: 1px solid #AEAEAE;
+  text-align: left;
+}
+
+.details__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 600;
+  column-gap: 10px;
+}
+
+.details__summary-icon {
+  content: url("../icons/Plus.svg");
+  width: 32;
+  height: 31;
+}
+
+.details__summary:hover {
+  cursor: pointer;
+}
+
+.details__content {
+  padding: 20px 32px 0 10px;
+  font-size: clamp(16px, 2vw, 30px);
+  display: none;
+}
+
+.details > input:checked ~ .details__content {
+  display: block;
+}
+
+.details > input:checked ~ .details__summary > .details__summary-icon {
+  transform: rotate(45deg);
+}
+
+.details > input:focus-visible ~ .details__summary {
+  outline: var(--focus-outline);
+  border-radius: var(--focus-border-radius);
+}

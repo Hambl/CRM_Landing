@@ -1,0 +1,89 @@
+@import url(./css/header.css);
+@import url(./css/consultation.css);
+@import url(./css/banner.css);
+@import url(./css/benefit.css);
+@import url(./css/blocks.css);
+@import url(./css/accordion.css);
+
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --title-font: "Dela Gothic One", sans-serif;
+  --logo-font: Arial, Helvetica, sans-serif;
+  --font-color: #000;
+
+  --bg-page-color: #000;
+  --main-page-color: #FFF;
+
+  --focus-outline: 2px solid #000;
+  --focus-border-radius: 2px;
+}
+
+* { /* убираем синее выделение элементов при клике на тачпадах */
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: var(--focus-outline);
+  border-radius: var(--focus-border-radius);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  background-color: var(--bg-page-color);
+  color: var(--font-color);
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 30px;
+  margin: auto;
+  max-width: 1440px;
+}
+
+header,
+section,
+footer {
+  padding-inline: 110px;
+  margin: auto;
+  background-color: var(--main-page-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 360px) and (max-width: 960px) { /* телефон */
+  header,
+  section,
+  footer {
+    padding-inline: 16px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) { /* планшет */
+  header,
+  section,
+  footer {
+    padding-inline: 50px;
+  }
+}
+
+@media (min-width: 1200px) { /* десктоп */
+
+} 

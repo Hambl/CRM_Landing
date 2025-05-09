@@ -1,0 +1,30 @@
+.benefit {
+  background-color: #F5F7F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 64px;
+}
+
+.benefit__paragraph {
+  font-size: clamp(22px, 2.77vw, 40px);
+  max-width: 900px;
+  text-align: center;
+}
+
+.benefit__keyword {
+  padding-inline: 2%;
+  border-radius: 30px;
+}
+
+.benefit__keyword--blue {
+  background-color: #99B5EB;
+}
+
+.benefit__keyword--green {
+  background-color: #99C2A5;
+}
+
+.benefit__keyword--yellow {
+  background-color: #F9E78A;
+}

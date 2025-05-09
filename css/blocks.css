@@ -1,0 +1,83 @@
+@import url(./review.css);
+
+.block {
+  padding-block: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 32px;
+}
+
+.block__title,
+.block__paragraph {
+  max-width: 850px;
+}
+
+.block__title {
+  font-size: clamp(28px, 3.3vw, 48px);
+  font-family: var(--title-font);
+}
+
+.block__paragraph {
+  font-size: clamp(16px, 2vw, 30px);
+}
+
+.block__image {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.communication {
+  background-color: #99B5EB;
+  row-gap: clamp(32px, 3vw, 44px);
+}
+
+.communication__image {
+  max-width: 350px;
+  width: 100%;
+}
+
+.communication__image > img {
+  width: 100%;
+  height: auto;
+}
+
+.information {
+  background-color: #99C2A5;
+}
+
+.information__image {
+  background-image: url("../images/information.jpg");
+  height: 371px;
+  max-width: 701px;
+}
+
+.reports {
+  background-color: #F9E78A;
+}
+
+.reports__image {
+  background-image: url('../images/reports.jpg');
+  height: 443px;
+  max-width: 835px;
+}
+
+.reviews .reviews__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.faq {
+  background-color: #F5F7F8;
+}
+
+.footer.block {
+  row-gap: 39px;
+}
+
+.footer > p:last-child {
+  font-size: 14px;
+}

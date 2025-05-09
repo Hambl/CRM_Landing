@@ -1,0 +1,116 @@
+.header {
+  min-height: 76px;
+  padding-top: 14px; 
+}
+
+.logo {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--logo-font);
+  font-weight: bold;
+  font-size: 20.5px;
+  text-transform: uppercase;
+}
+
+.logo::before {
+  content: url("../icons/Logo.svg");
+  width: 52px;
+  height: 37px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__toggler {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+.navbar__toggler + label {
+  display: none;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+.navbar__toggler:focus-visible + label{
+  outline: var(--focus-outline);
+  border-radius: var(--focus-border-radius);
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.contacts__list > li {
+  width: 207px; 
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: bold;
+  border-left: 1px solid #C4C4C4;
+}
+
+.contacts__list > li:first-child {
+  border-left: none;
+}
+
+.contacts__list > li:last-child {
+  width: 183px; 
+}
+
+.contacts__list > li > span:first-child {
+  color: #6B6B6B;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1240px) {
+  .contacts {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 16px;
+  }
+
+  .contacts > .contacts__list > li {
+    padding-left: 0;
+    border: none;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .navbar__toggler + label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .navbar__toggler:checked ~ .contacts {
+    max-height: 100%;
+  }
+
+  .navbar__toggler:checked + label > svg {
+    transform: scaleY(-1);
+  }
+}

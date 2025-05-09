@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИТ_КОМФОРТ</title>
+    <link rel="icon" href="./icons/Logo.svg">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <meta name="description" content="Внедрение CRM систем за 2 недели. Работаем по всей России. Закажите бесплатную консультацию.">
+    <meta name="keywords" content="ИТ-Комфорт, CRM, CRM-системы, внедрение, настройка, Россия">
+  </head>
+  <body class="page">
+    <h1 class="visually-hidden">Внедрение CRM систем</h1>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="logo">ит_комфорт</a>
+        <input type="checkbox" class="navbar__toggler" id="toggler">
+        <label for="toggler">
+          <span class="visually-hidden">Контакты</span>
+          <svg
+            width="20"
+            height="12"
+            viewBox="0 0 20 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 2L10 10L2 2"
+              stroke="black"
+              stroke-width="2.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </label>
+        <div class="contacts">
+          <ul class="contacts__list">
+            <li>
+              <span>Время работы</span>
+              <span>
+                Пн-Вс 
+                <time datetime="09:00:00">9:00</time>
+                -
+                <time datetime="21:00:00">21:00</time>
+              </span>
+            </li>
+            <li>
+              <span lang="en">Email</span>
+              <a href="mailto:info@it-komfort.ru" lang="en">info@it-komfort.ru</a>
+            </li>
+            <li>
+              <span>Мессенджеры</span>
+              <a href="https://wa.me/79128810296">+79128810296</a>
+            </li>
+            <li>
+              <span>Телефон</span>
+              <a href="tel:+73422430296">+7(342)243-02-96</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <h2 class="visually-hidden">Заказать консультацию</h2>
+        <div class="banner__consultation">
+          <p>Поможем<br>навести порядок<br>в компании</p>
+          <p>Внедрение CRM системы за 2 недели.<br>Работаем по всей России.</p>
+          <form action="#" class="consultation" id="bannerForm" name="bannerForm">
+            <div class="consultation__inner">
+              <input
+                type="text"
+                class="consultation__company"
+                name="company"
+                placeholder="Название компании">
+              <div class="consultation__phone-wrapper">
+                <input
+                type="tel"
+                class="consultation__phone"
+                name="phone"
+                id="bannerPhone"
+                required>
+                <label for="bannerPhone" class="consultation__phone-placeholder">Телефон</label>
+              </div>
+              <button class="consultation__order">
+                Заказать бесплатную консультацию
+              </button>
+            </div>
+            <p>Мы никогда не передаем Ваши данные третьим лицам</p>
+          </form>
+        </div>
+        <div class="banner__image">
+          <img src="./images/banner.jpg" alt="" width="496" height="317">
+        </div>
+      </section>
+
+      <section class="benefit">
+        <h2 class="visually-hidden">Преимущество CRM системы</h2>
+        <p class="benefit__paragraph">
+          Внедрение CRM позволит Вашей компании
+          <span class="benefit__keyword benefit__keyword--blue">
+            связываться</span>
+          с клиентом вовремя,
+          <span class="benefit__keyword benefit__keyword--green">
+            сохранять</span>
+          всю информацию о заказах,
+          <span class="benefit__keyword benefit__keyword--yellow">
+            анализировать</span>
+          показатели продаж.
+        </p>
+      </section>
+
+      <section class="communication block">
+        <h2 class="visually-hidden">Интеграция каналов связи</h2>
+        <p class="block__title">Объединение всех каналов связи в одной системе</p>
+        <p class="block__paragraph">
+          Подключите мессенджеры, соцсети, Авито, сайты, чаты, и общайтесь с
+          клиентами в режиме одного окна.
+        </p>
+        <div class="communication__image">
+          <img
+            src="./images/communication.svg"
+            alt=""
+            width="350"
+            height="350">
+        </div>
+      </section>
+
+      <section class="information block">
+        <h2 class="visually-hidden">Хранение данных</h2>
+        <p class="block__title">Сотрудник уходит,<br>данные остаются</p>
+        <p class="block__paragraph">Вся информация о клиенте и его заказах сохраняется в CRM</p>
+        <div class="information__image block__image"></div>
+      </section>
+
+      <section class="reports  block">
+        <h2 class="visually-hidden">Аналитика данных</h2>
+        <p class="block__title">Принимайте решения на основе данных</p>
+        <p class="block__paragraph">Отчёты по продажам, по менеджерам, по клиентам.</p>
+        <div class="reports__image block__image"></div>
+      </section>
+
+      <section class="reviews block">
+        <h2 class="block__title">Отзывы</h2>
+        <p class="block__paragraph">Более 15 000 000 компаний по всему миру уже используют CRM-системы.</p>
+        <div class="reviews__wrapper">
+          <div class="review">
+            <div class="review__avatar">
+              <img
+              src="./images/avatar-mihail.jpg"
+              alt=""
+              width="48"
+              height="48">
+            </div>
+            <span class="review__name">Михаил Кириченко</span>
+            <span lang="en" class="review__company">Just look</span>
+            <blockquote>
+              <p class="review__quote">
+                Отдел продаж начал отмечать в CRM все действия и результаты
+                работы с клиентами – звонки, письма, встречи и их итоги, ход
+                сделок, их завершение, выставление счетов – мы, наконец-то,
+                начали учитывать все.
+              </p>
+            </blockquote>
+          </div>
+          <div class="review">
+            <div class="review__avatar">
+              <img
+              src="./images/avatar-aleksey.jpg"
+              alt=""
+              width="48"
+              height="48">
+            </div>
+            <span class="review__name">Алексей Гранин</span>
+            <span lang="en" class="review__company">Datakit</span>
+            <blockquote>
+              <p class="review__quote">
+                Мы отслеживаем как результаты работы каждого менеджера,
+                анализируя воронку продаж, так и продуктивность технических
+                специалистов с помощью отчетов по задачам.
+              </p>
+            </blockquote>
+          </div>
+          <div class="review">
+             <div class="review__avatar">
+              <img
+              src="./images/avatar-ekaterina.jpg"
+              alt=""
+              width="48"
+              height="48">
+             </div>
+            <span class="review__name">Екатерина Мясникова</span>
+            <span class="review__company">МеталлСтройГрупп</span>
+            <blockquote>
+              <p class="review__quote">
+                Когда менеджеры работают в своих файлах на домашних компьютерах,
+                нет прозрачности для руководителя. Я не понимала, как работают с
+                клиентами, не забывают ли о них.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq block">
+        <h2 class="block__title">Частые вопросы</h2>
+        <div class="accordion">
+          <div class="details">
+            <input type="checkbox" id="question_1" class="visually-hidden">
+            <label for="question_1" class="details__summary">
+              Сколько это стоит?
+              <span class="details__summary-icon"></span>
+            </label>
+            <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="details">
+            <input type="checkbox" id="question_2" class="visually-hidden">
+            <label for="question_2" class="details__summary">
+              Можно ли подключить 1С?
+              <span class="details__summary-icon"></span>
+            </label>
+            <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="details">
+            <input type="checkbox" id="question_3" class="visually-hidden">
+            <label for="question_3" class="details__summary">
+              А если сотрудники начнут сопротивляться новой системе?
+              <span class="details__summary-icon"></span>
+            </label>
+            <p class="details__content">              
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Facilis, iusto. Iusto, et! Reiciendis, cum. Quisquam, quam blanditiis. 
+              Autem quos accusantium alias rerum ratione, quas corporis voluptas quidem quibusdam, illum error.</p>
+          </div>
+          <div class="details">
+            <input type="checkbox" id="question_4" class="visually-hidden">
+            <label for="question_4" class="details__summary">
+              Какая CRM лучше?
+              <span class="details__summary-icon"></span>
+            </label>
+            <p class="details__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="details">
+            <input type="checkbox" id="question_5" class="visually-hidden">
+            <label for="question_5" class="details__summary">
+              Смогут ли менеджеры скачать базу?
+              <span class="details__summary-icon"></span>
+            </label>
+            <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer block">
+        <h2 class="block__title">Заказать настройку CRM</h2>
+        <p class="block__paragraph">Оставьте заявку,<br>и мы перезвоним Вам в течение 10 минут.</p>
+        <form action="#" class="consultation" id="footerForm" name="footerForm">
+          <div class="consultation__inner">
+            <input
+              type="text"
+              class="consultation__company"
+              name="company"
+              placeholder="Название компании">
+            <div class="consultation__phone-wrapper">
+              <input
+              type="tel"
+              class="consultation__phone"
+              name="phone"
+              id="footerPhone"
+              required>
+              <label for="footerPhone" class="consultation__phone-placeholder">Телефон</label>
+            </div>
+            <button class="consultation__order">
+              Заказать бесплатную консультацию
+            </button>
+          </div>
+          <p>Мы никогда не передаем Ваши данные третьим лицам</p>
+        </form>
+        <p>© 2015-2024 ООО “ИТ-Комфорт” ИНН: 5906133680 ОГРН: 1155958105962</p>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
